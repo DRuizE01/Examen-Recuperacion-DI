@@ -3,6 +3,8 @@ import './style.css';
 import Ejercicios1Ev from './components/Ejercicios1Ev';
 import Ejercicios2Ev from './components/Ejercicios2Ev';
 import Chistes from './components/Chistes';
+import Formulario from './components/Formulario';
+
 import 'bootstrap/dist/css/bootstrap.min.css';
 
 
@@ -20,7 +22,7 @@ function App() {
       <Ejercicios1Ev />
       <Ejercicios2Ev />
       <Chistes/>
-
+      <Formulario/>
 
     </div>
   );

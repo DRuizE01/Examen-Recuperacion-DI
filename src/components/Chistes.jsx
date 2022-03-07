@@ -10,7 +10,7 @@ class Chistes extends React.Component {
     super(props);
     this.state = {
       selectItem: null,
-      tableData: [],
+      datoschistes: [],
     };
   }
 
@@ -20,14 +20,14 @@ class Chistes extends React.Component {
     );
     const responseData = await response.json();
 
-    this.setState({ tableData: responseData.jokes });
+    this.setState({ datoschistes: responseData.jokes });
   }
   render() {
     return (
       <div className="">
         <h1>Chistes</h1>
 
-        {this.state.tableData.map((item) => {
+        {this.state.datoschistes.map((item) => {
           return (
             <Accordion>
               <Accordion.Item eventKey="0">
